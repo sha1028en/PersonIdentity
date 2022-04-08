@@ -90,7 +90,7 @@ mysql-connector-java-5.1.42-bin.jar 필요!
 		
 		
 		 final String DRIVER = inPrivate.getProperty("Driver");
-		 final String URL	= inPrivate.getProperty("URL");AS
+		 final String URL	= inPrivate.getProperty("URL");
 		 final String UID	= inPrivate.getProperty("UID");
 		 final String PASSWD	= inPrivate.getProperty("PASSWD");
 	
