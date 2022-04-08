@@ -51,8 +51,7 @@ public class DBUtillity {
 				}
 			}
 		}
-		
-		
+
 		connection = this.dbInit.initConnection();
 		
 		// INSERT
