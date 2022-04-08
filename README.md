@@ -158,9 +158,9 @@ PersonIdentity ArrayList 또는 쿼리 성공여부를 리턴한다.
   * 쿼리 결과를 ArrayList< PersonIdentity>로 리턴하거나 실패시 null을 리턴한다.
  ```
  ```
- * public List<PersonIdentity> selectAllPhoneBook()
-   * 모든 레코드를 select 시도한다
-   * 쿼리 결과를 ArrayList< PersonIdentity>로 리턴하거나 실패시 null을 리턴한다.
+* public List<PersonIdentity> selectAllPhoneBook()
+  * 모든 레코드를 select 시도한다
+  * 쿼리 결과를 ArrayList< PersonIdentity>로 리턴하거나 실패시 null을 리턴한다.
  ```
  ```
  * public List<PersonIdentity > sortPersonIdentity(int action)
