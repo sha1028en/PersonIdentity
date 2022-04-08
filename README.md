@@ -57,8 +57,8 @@ mysql-connector-java-5.1.42-bin.jar 필요!
   * 총점 / 평균 / 등급 은 initPersonIdentity()를 부르면 나머지 3과목 값으로 알아서 계산한다.
 ```
 ```
-*	private final int LIMIT_POINT_MAX = 100;
-*	private final int LIMIT_POINT_MIN = 0;
+* private final int LIMIT_POINT_MAX = 100;
+* private final int LIMIT_POINT_MIN = 0;
   * 과목의 최대 / 최저 점수를 제한하고 있다.
 ```
 ```
@@ -152,7 +152,7 @@ PersonIdentity ArrayList 또는 쿼리 성공여부를 리턴한다.
   *  쿼리 결과를 true / false로 리턴한다.
 ```
 ```
-*  public List<PersonIdentity> selectPersonIdentity( String queryTarget ,int action)
+* public List<PersonIdentity> selectPersonIdentity( String queryTarget ,int action)
   * 파라미터의 action이 ACTION_ID_QUERY / ACTION_NAME_QUERY 이냐에 따라 쿼리 기준이 다르다.
   * action을 기반으로 PersonIdentity의 personId / personName을 기준으로 select 를 시도한다
   * 쿼리 결과를 ArrayList< PersonIdentity>로 리턴하거나 실패시 null을 리턴한다.
