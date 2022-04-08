@@ -143,7 +143,7 @@ public class PersonIdentityTask {
 			queryTarget = PersonIdentityTask.scanner.nextLine();
 				
 				
-			// Verfiy Input
+			// Verify Input
 			if 		( isVaildValue( queryTarget, PATTERN_NAME)) 	break;
 			else if	( queryTarget.length() <= 11 ) 					break;
 			System.out.println("올바르게 입력해 주세요!!"); 
@@ -270,12 +270,6 @@ public class PersonIdentityTask {
 			}
 		}
 	}
-	
-	
-	
-	
-	
-	
 
 	
 	// Verify input String

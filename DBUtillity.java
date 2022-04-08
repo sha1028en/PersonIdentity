@@ -29,13 +29,31 @@ public class DBUtillity {
 	public boolean insertPersonIdentity( PersonIdentity person) {
 		
 		// open DBOpenHelper
-		Connection connection = this.dbInit.initConnection();
+		Connection connection = null;
 		
 		boolean isInsert = true;
 		PreparedStatement safeQurey = null;
 		final String QUERY_STRING = 
 				"insert into personidentitytable values(?,?,?,?,?,?,?,?,?)";
 		
+		List<PersonIdentity> personList = 
+				this.selectAllPhoneBook();
+		
+		
+		
+		// IF personIdentitydb already has same ID??
+		if( !personList.isEmpty() ) {
+			for(PersonIdentity buf : personList) {
+				
+				if( person.getPersonId().equals( buf.getPersonId())) {
+					System.out.println("중복됀 ID는 삽입 할 수 없어요!");
+					return false;
+				}
+			}
+		}
+		
+		
+		connection = this.dbInit.initConnection();
 		
 		// INSERT
 		try {

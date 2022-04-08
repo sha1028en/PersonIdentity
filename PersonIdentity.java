@@ -246,7 +246,6 @@ public class PersonIdentity implements Comparable<Object>{
 	
 	
 	//// 	__Override Func()__		////
-
 	@Override
 	public int compareTo( Object obj) {
 		int isSame = 0;
